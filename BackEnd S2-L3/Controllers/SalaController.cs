@@ -15,21 +15,24 @@ namespace BackEnd_S2_L3.Controllers
             {
                 Id = Guid.NewGuid(),
                 NomeSala = "Sala Nord",
-                NumeroPosti= 120
+                NumeroPosti= 120,
+                PrezzoBase= 8.00m,
             },
 
             new Sala()
             {
                 Id = Guid.NewGuid(),
                 NomeSala = "Sala Sud",
-                NumeroPosti= 120
+                NumeroPosti= 120,
+                 PrezzoBase= 8.00m,
             },
 
             new Sala()
             {
                 Id = Guid.NewGuid(),
                 NomeSala = "Sala Est",
-                NumeroPosti= 120
+                NumeroPosti= 120,
+                 PrezzoBase= 8.00m,
             }
         };
 

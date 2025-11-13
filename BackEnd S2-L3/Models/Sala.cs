@@ -5,5 +5,7 @@
         public Guid Id { get; set; }
         public string NomeSala { get; set; }
         public int NumeroPosti { get; set; }
+
+        public decimal PrezzoBase { get; set; }
     }
 }

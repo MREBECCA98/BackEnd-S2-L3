@@ -1,3 +1,49 @@
-﻿@{
+﻿@model ListaBigliettiViewModel
+
+
+
+@{
     <h1>@ViewBag.Titolo</h1>
 }
+
+
+<form>
+    <div class="mb-3">
+        <label class="form-label">ID</label>
+        <input name= Id value=  >
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Emesso il:</label>
+        <input name= EmessoIl>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Sala:</label>
+        <input name= Sala>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Spettatore</label>
+        <input name= Spettatore>
+    </div>
+
+   
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+
+
+@* <ol>
+    @if (Model?.Biglietti != null && Model.Biglietti.Any())
+    {
+        foreach (var Biglietto in Model.Biglietti)
+        {
+            <li>Id: @Biglietto.Id - Emesso il: @Biglietto.EmessoIl - Sala: @Biglietto.Sala - Spettatore: @Biglietto.Spettatore</li>
+        }
+    }
+    else
+    {
+        <li>Nessun biglietto disponibile.</li>
+    }
+</ol> *@
+
+
+

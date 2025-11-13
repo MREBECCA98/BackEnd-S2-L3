@@ -7,7 +7,7 @@
     @foreach(Sala sala in Model.Sales)
     {
         <li>
-            <span> @sala.NomeSala - Posti totali: @sala.NumeroPosti</span>
+            <span> @sala.NomeSala - Posti totali: @sala.NumeroPosti - Prezzo: @sala.PrezzoBase</span>
             <a class="nav-link text-dark" asp-controller="CompraBiglietto" asp-action="Index">Compra biglietto</a>
         </li>
     }
