@@ -1,4 +1,4 @@
-﻿@model ListaBigliettiViewModel
+﻿@model AcquistaBigliettoViewModel
 
 
 
@@ -7,22 +7,23 @@
 }
 
 
-<form>
-    <div class="mb-3">
-        <label class="form-label">ID</label>
-        <input name= Id value=  >
-    </div>
-    <div class="mb-3">
-        <label class="form-label">Emesso il:</label>
-        <input name= EmessoIl>
-    </div>
+<form asp-controller="CompraBiglietto" asp-action="Compra" method="post">
+  
     <div class="mb-3">
         <label class="form-label">Sala:</label>
-        <input name= Sala>
+        <input asp-for="Sala" >
     </div>
     <div class="mb-3">
-        <label class="form-label">Spettatore</label>
-        <input name= Spettatore>
+        <label class="form-label">Nome</label>
+        <input asp-for="Nome">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Cognome</label>
+        <input asp-for="Cognome">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Codice fiscale</label>
+        <input asp-for="CodiceFiscale">
     </div>
 
    
